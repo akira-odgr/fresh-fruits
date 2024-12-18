@@ -3,34 +3,7 @@ import { FaLeaf } from "react-icons/fa6";
 import { MdOutlineShoppingCart, MdMenu, MdOutlineClose } from "react-icons/md";
 import { ResponsiveMenu } from "./ResponsiveMenu";
 import { motion } from "framer-motion";
-
-const NavBarMenu = [
-    {
-        id: 1,
-        title: "Home",
-        link: "/",
-    },
-    {
-        id: 2,
-        title: "Product",
-        link: "#",
-    },
-    {
-        id: 3,
-        title: "About",
-        link: "#",
-    },
-    {
-        id: 4,
-        title: "Shop",
-        link: "#",
-    },
-    {
-        id: 5,
-        title: "Contacts",
-        link: "#",
-    },
-];
+import { NavMenuData } from "./NavMenuData";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -58,7 +31,7 @@ export const Navbar = () => {
                     {/* Menu section */}
                     <div className="hidden md:block">
                         <ul className="flex items-center gap-6 text-gray-600">
-                            {NavBarMenu.map((menu) => {
+                            {NavMenuData.map((menu) => {
                                 return (
                                     <li key={menu.id}>
                                         <a
