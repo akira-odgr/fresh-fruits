@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaLeaf } from "react-icons/fa6";
-import { MdOutlineShoppingCart, MdMenu } from "react-icons/md";
+import { MdOutlineShoppingCart, MdMenu, MdOutlineClose } from "react-icons/md";
 import { ResponsiveMenu } from "./ResponsiveMenu";
 
 const NavBarMenu = [
@@ -72,7 +72,11 @@ export const Navbar = () => {
 
                     {/* Mobile Hamburger section */}
                     <div className="md:hidden" onClick={clickOpen}>
-                        <MdMenu className="text-4xl" />
+                        {open ? (
+                            <MdOutlineClose className="text-4xl" />
+                        ) : (
+                            <MdMenu className="text-4xl" />
+                        )}
                     </div>
                 </div>
             </nav>
