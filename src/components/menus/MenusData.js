@@ -10,6 +10,7 @@ export const MenusData = [
         title: "Fresh Red Apples",
         link: "#",
         price: "$3.99",
+        delay: 0.3,
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ export const MenusData = [
         title: "Fresh Oranges",
         link: "#",
         price: "$4.99",
+        delay: 0.6,
     },
     {
         id: 3,
@@ -24,6 +26,7 @@ export const MenusData = [
         title: "Fresh Avocado",
         link: "#",
         price: "$5.99",
+        delay: 0.9,
     },
     {
         id: 4,
@@ -31,5 +34,6 @@ export const MenusData = [
         title: "Fresh Cherries",
         link: "#",
         price: "$2.99",
+        delay: 1.2,
     },
 ];

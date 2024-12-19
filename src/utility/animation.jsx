@@ -1,3 +1,4 @@
+// COMMON
 export const FadeUp = (delay) => {
     return {
         hidden: {
@@ -49,6 +50,7 @@ export const FadeRight = (delay) => {
     };
 };
 
+// HERO
 export const HeroFruit = () => {
     return {
         hidden: {
