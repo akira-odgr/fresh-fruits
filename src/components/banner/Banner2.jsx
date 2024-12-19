@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import BannerPng from "../../assets/fruits-splash.png";
-import { BannerFruits, FadeUp } from "../../utility/animation";
+import BannerFruits2 from "../../assets/fruit-plate2.png";
+import { FadeUp } from "../../utility/animation";
 
-export const Banner = () => {
+export const Banner2 = () => {
     return (
-        <section className="bg-secondary/10">
+        <section>
             <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
                 {/* Banner Image */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center md:order-2">
                     <motion.img
-                        variants={BannerFruits()}
-                        initial="hidden"
-                        whileInView="visible"
+                        initial={{ opacity: 0, x: 200, rotate: 75 }}
+                        whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+                        transition={{ duration: 1, delay: 0.3 }}
                         viewport={{ once: true }}
-                        src={BannerPng}
-                        alt="BannerFruits"
+                        src={BannerFruits2}
+                        alt="BannerFruits2"
                         className="w-[300px] md:max-w-[400px] h-full object-cover drop-shadow"
                     />
                 </div>
 
                 {/* Brand Info */}
-                <div className="flex flex-col justify-center text-center md:text-left gap-4 lg:max-w-[400px] ">
+                <div className="flex flex-col justify-center gap-4 md:order-1 lg:max-w-[400px] text-center md:text-left">
                     <motion.h1
                         variants={FadeUp(0.5)}
                         initial="hidden"
@@ -36,19 +36,20 @@ export const Banner = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Minima, expedita? Deleniti excepturi aut est
-                        fugit, eaque beatae, quas assumenda placeat non ut hic
-                        alias, sint et nesciunt ratione delectus facilis.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Veniam veritatis error ex odio iure repellendus
+                        ratione? Temporibus asperiores vero quisquam
+                        perspiciatis obcaecati, totam incidunt enim labore esse
+                        dicta eveniet mollitia.
                     </motion.p>
                     <motion.p
-                        variants={FadeUp(0.9)}
+                        variants={FadeUp(0.7)}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Labore, nihil quis suscipit temporibus veniam quo.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis praesentium ad, dolores veniam ut accusamus?
                     </motion.p>
                     <motion.div
                         variants={FadeUp(1.1)}

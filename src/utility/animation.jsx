@@ -89,3 +89,21 @@ export const HeroLeaf = () => {
         },
     };
 };
+
+export const BannerFruits = () => {
+    return {
+        hidden: {
+            opacity: 0,
+            scale: 0.5,
+        },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                type: "spring",
+                stiffness: 100,
+                delay: 0.3,
+            },
+        },
+    };
+};

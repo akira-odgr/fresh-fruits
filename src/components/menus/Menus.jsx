@@ -10,6 +10,7 @@ export const Menus = () => {
                     initial={{ opacity: 0, x: -200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.3 }}
+                    viewport={{ once: true }}
                     className="text-2xl font-bold text-left mb-10 uppercase"
                 >
                     Our Menu
@@ -21,6 +22,7 @@ export const Menus = () => {
                             variants={FadeLeft(menu.delay)}
                             initial="hidden"
                             whileInView="visible"
+                            viewport={{ once: true }}
                             whileHover={{ scale: 1.1 }}
                             className="flex justify-around items-center gap-3  bg-white rounded-3xl px-4 py-4 shadow-[0_0_22px_0_rgba(0,0,0,0.15)]"
                         >
