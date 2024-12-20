@@ -4,6 +4,7 @@ import { Menus } from "./components/menus/Menus";
 import { Banner } from "./components/banner/Banner";
 import { Banner2 } from "./components/banner/Banner2";
 import { Banner3 } from "./components/banner/Banner3";
+import { Footer } from "./components/footer/Footer";
 
 export const App = () => {
     return (
@@ -15,6 +16,7 @@ export const App = () => {
                 <Banner />
                 <Banner2 />
                 <Banner3 />
+                <Footer />
             </main>
         </>
     );

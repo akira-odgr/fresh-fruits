@@ -15,7 +15,7 @@ export const Banner2 = () => {
                         viewport={{ once: true }}
                         src={BannerFruits2}
                         alt="BannerFruits2"
-                        className="w-[300px] md:max-w-[400px] h-full object-cover drop-shadow"
+                        className="w-[350px] md:max-w-[500px] h-full object-cover drop-shadow"
                     />
                 </div>
 
@@ -28,7 +28,7 @@ export const Banner2 = () => {
                         viewport={{ once: true }}
                         className="text-3xl lg:text-6xl font-bold uppercase"
                     >
-                        Brand Info
+                        Online Fruit Store
                     </motion.h1>
                     <motion.p
                         variants={FadeUp(0.7)}
@@ -57,7 +57,7 @@ export const Banner2 = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        <button className="primary-btn">Learn More</button>
+                        <button className="primary-btn">Download App</button>
                     </motion.div>
                 </div>
             </div>
